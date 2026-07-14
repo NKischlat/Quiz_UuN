@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interaktives Quiz zum Lernfeld Um- und Nachrüsten">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Zur Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M12 31a14 14 0 0 1 24 0M8 31h32M16 31v5m16-5v5M19 22l-4-7m14 7 4-7"/><circle cx="14" cy="36" r="4"/><circle cx="34" cy="36" r="4"/></svg>
+        </span>
+      </a>
+      <div class="header-meta" aria-label="Quizumfang">
+        <span>29 Aufgaben</span><span>31:00 Minuten</span><span>22.000 Punkte</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="start-screen" class="screen start-screen" aria-labelledby="start-title">
+        <div class="hero-copy">
+          <h1 id="start-title">Bereit für die<br><span>Challenge?</span></h1>
+          <p>Teste dein Wissen im Bereich Um- & Nachrüsten. In den ersten 10 Sekunden erhältst du für eine richtige Antwort die volle Punktzahl – danach sinkt sie.</p>
+          <div class="feature-row" aria-label="Quizmerkmale">
+            <div><b>3</b><span>Aufgabentypen</span></div>
+            <div><b>31:00</b><span>Maximalzeit</span></div>
+            <div><b>29</b><span>Etappen</span></div>
+          </div>
+        </div>
+
+        <div class="start-panel">
+          <div class="panel-topline"><span></span><span></span><span></span></div>
+          <h2>Quiz starten</h2>
+          <p>Trage deinen Namen ein. Er erscheint später auf der Auswertung.</p>
+          <label for="player-name">Name</label>
+          <input id="player-name" type="text" maxlength="40" autocomplete="name" placeholder="Name">
+          <button id="start-button" class="primary-button" type="button">
+            <span>Challenge beginnen</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <p class="privacy-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            Die Auswertung bleibt lokal auf diesem Gerät.
+          </p>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="screen quiz-screen" hidden aria-labelledby="question-title">
+        <div class="quiz-status">
+          <div class="status-copy">
+            <span id="section-label" class="section-label">Reifen &amp; Räder</span>
+            <span id="question-counter">Aufgabe 1 von 29</span>
+          </div>
+          <div class="timer-box" id="timer-box" aria-label="Verbleibende Zeit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span id="timer">00:45</span>
+          </div>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="29" aria-valuenow="1" aria-label="Quizfortschritt">
+          <span id="progress-bar"></span>
+        </div>
+
+        <article class="question-card">
+          <div class="question-heading">
+            <div>
+              <div class="question-tags">
+                <span id="difficulty-badge" class="difficulty-badge">Mittel</span>
+                <span id="type-badge" class="type-badge">Zuordnung</span>
+              </div>
+              <h2 id="question-title"></h2>
+              <p id="question-instruction" class="question-instruction"></p>
+            </div>
+            <div class="points-chip" aria-label="Maximal erreichbare Punkte">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.8 5.7L21 8.6l-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 8.6l6.2-.9L12 2Z"/></svg>
+              <strong id="max-points">750</strong><span>Punkte</span>
+            </div>
+          </div>
+
+          <div id="question-content" class="question-content"></div>
+
+          <div id="feedback" class="feedback" hidden aria-live="polite"></div>
+
+          <div class="question-actions">
+            <button id="submit-button" class="primary-button" type="button" disabled>Antwort bestätigen</button>
+            <button id="next-button" class="primary-button" type="button" hidden>Nächste Aufgabe</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="result-screen" class="screen result-screen" hidden aria-labelledby="result-title">
+        <div class="result-hero">
+          <span class="eyebrow">Challenge abgeschlossen</span>
+          <h1 id="result-title">Starke Leistung!</h1>
+          <p id="result-message"></p>
+        </div>
+
+        <div class="result-grid">
+          <div class="score-panel">
+            <div id="score-ring" class="score-ring" style="--score-angle: 0deg">
+              <div><strong id="score-percent">0%</strong><span>Gesamtergebnis</span></div>
+            </div>
+            <p><strong id="final-score">0</strong> von <span id="final-max-score">22.000</span> Punkten</p>
+            <div class="screenshot-prompt" role="note">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3v12H4Z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <div><strong>Ergebnis sichern</strong><span>Mache jetzt einen Screenshot deiner erreichten Punktzahl.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-panel">
+          <div class="review-heading">
+            <div><span class="eyebrow">Auswertung</span><h2>Aufgaben im Überblick</h2></div>
+            <button id="review-toggle" class="secondary-button" type="button" aria-expanded="false">Ergebnisse anzeigen</button>
+          </div>
+          <div id="review-list" hidden></div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer><span>Staatliche Berufsschule 1 Bayreuth</span><span>Um- &amp; Nachrüsten</span></footer>
+  </div>
+
+  <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+  <script src="quiz-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

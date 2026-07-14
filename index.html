@@ -324,7 +324,7 @@ footer { min-height: 70px; display: flex; justify-content: space-between; align-
         </span>
       </a>
       <div class="header-meta" aria-label="Quizumfang">
-        <span>29 Aufgaben</span><span>31:00 Minuten</span><span>22.000 Punkte</span>
+        <span>28 Aufgaben</span><span>30:10 Minuten</span><span>21.500 Punkte</span>
       </div>
     </header>
 
@@ -335,8 +335,8 @@ footer { min-height: 70px; display: flex; justify-content: space-between; align-
           <p>Teste dein Wissen im Bereich Um- & Nachrüsten. In den ersten 10 Sekunden erhältst du für eine richtige Antwort die volle Punktzahl – danach sinkt sie.</p>
           <div class="feature-row" aria-label="Quizmerkmale">
             <div><b>3</b><span>Aufgabentypen</span></div>
-            <div><b>31:00</b><span>Maximalzeit</span></div>
-            <div><b>29</b><span>Etappen</span></div>
+            <div><b>30:10</b><span>Maximalzeit</span></div>
+            <div><b>28</b><span>Etappen</span></div>
           </div>
         </div>
 
@@ -361,14 +361,14 @@ footer { min-height: 70px; display: flex; justify-content: space-between; align-
         <div class="quiz-status">
           <div class="status-copy">
             <span id="section-label" class="section-label">Reifen &amp; Räder</span>
-            <span id="question-counter">Aufgabe 1 von 29</span>
+            <span id="question-counter">Aufgabe 1 von 28</span>
           </div>
           <div class="timer-box" id="timer-box" aria-label="Verbleibende Zeit">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             <span id="timer">00:45</span>
           </div>
         </div>
-        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="29" aria-valuenow="1" aria-label="Quizfortschritt">
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="28" aria-valuenow="1" aria-label="Quizfortschritt">
           <span id="progress-bar"></span>
         </div>
 
@@ -411,7 +411,7 @@ footer { min-height: 70px; display: flex; justify-content: space-between; align-
             <div id="score-ring" class="score-ring" style="--score-angle: 0deg">
               <div><strong id="score-percent">0%</strong><span>Gesamtergebnis</span></div>
             </div>
-            <p><strong id="final-score">0</strong> von <span id="final-max-score">22.000</span> Punkten</p>
+            <p><strong id="final-score">0</strong> von <span id="final-max-score">21.500</span> Punkten</p>
             <div class="screenshot-prompt" role="note">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3l1.5-2h7L17 7h3v12H4Z"/><circle cx="12" cy="13" r="3.5"/></svg>
               <div><strong>Ergebnis sichern</strong><span>Mache jetzt einen Screenshot deiner erreichten Punktzahl.</span></div>
@@ -471,21 +471,14 @@ window.QUIZ_DATA = [
     explanation: "Die Größenangabe beschreibt Abmessungen und Bauart; Last- und Geschwindigkeitsindex folgen am Ende."
   },
   {
-    id: 3, section: "Reifen & Räder", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Leicht", time: 50, points: 500,
-    title: "Finde die wichtigen Kennzeichnungen auf der Reifenflanke.",
-    instruction: "Markiere Reifengröße, DOT-Code und Laufrichtung. Drei Bereiche sind richtig.",
-    diagram: "tire-markings", correct: ["size", "dot", "rotation"],
-    explanation: "Reifengröße, DOT-Code und Laufrichtung stehen auf der Seitenwand. Das Alpine-Symbol kennzeichnet die Wintereignung."
-  },
-  {
-    id: 4, section: "Reifen & Räder", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Leicht", time: 40, points: 500,
+    id: 3, section: "Reifen & Räder", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Leicht", time: 40, points: 500,
     title: "Wo befindet sich der Gürtel im Reifen?",
     instruction: "Wähle im Querschnitt den Bereich direkt unter der Lauffläche.",
     diagram: "tire-section", correct: ["belt"],
     explanation: "Der Gürtel liegt unter der Lauffläche. Er stabilisiert die Karkasse gegen Seitenkräfte und die Bodenaufstandsfläche gegen Verformung."
   },
   {
-    id: 5, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 105, points: 1000,
+    id: 4, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 105, points: 1000,
     title: "Welche Funktion erfüllt welches Reifenbauteil?",
     instruction: "Verbinde die sieben Komponenten mit ihrer Hauptfunktion.",
     items: [
@@ -503,7 +496,7 @@ window.QUIZ_DATA = [
     explanation: "Erst das Zusammenspiel aller Schichten ermöglicht Kraftübertragung, Dichtheit, Stabilität und Schutz."
   },
   {
-    id: 6, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 60, points: 750,
+    id: 5, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 60, points: 750,
     title: "Radialreifen oder Diagonalreifen?",
     instruction: "Ordne die Karkassenkonstruktionen der richtigen Reifenbauart zu.",
     items: [
@@ -515,7 +508,7 @@ window.QUIZ_DATA = [
     explanation: "Radialreifen bieten bessere Fahreigenschaften; Diagonalreifen sind durch ihre gekreuzten Lagen besonders robust."
   },
   {
-    id: 7, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 60, points: 750,
+    id: 6, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 60, points: 750,
     title: "Erkennst du die drei Ventilarten?",
     instruction: "Ordne jedem Bild die passende Ventilbezeichnung zu.",
     items: [
@@ -530,7 +523,7 @@ window.QUIZ_DATA = [
     explanation: "Die Bauform muss zu Felge, Fahrzeug und zulässiger Geschwindigkeit passen."
   },
   {
-    id: 8, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 40, points: 500,
+    id: 7, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 40, points: 500,
     title: "Welches Ventil ist für einen Reifen bis 240 km/h geeignet?",
     instruction: "Wähle genau eine Antwort aus.",
     options: [
@@ -540,7 +533,7 @@ window.QUIZ_DATA = [
     explanation: "Snap-in-Ventile sind laut Material nur für Geschwindigkeiten unter 210 km/h geeignet. Für 240 km/h wird ein Metallventil gewählt."
   },
   {
-    id: 9, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 75, points: 1000,
+    id: 8, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 75, points: 1000,
     title: "Welche Schadensarten zeigen die drei Reifenbilder?",
     instruction: "Ordne jedem Bild die passende Schadensart zu.",
     items: [
@@ -557,7 +550,7 @@ window.QUIZ_DATA = [
     explanation: "Die Bilder zeigen Alterungsrisse, einseitigen Abrieb und beidseitigen Abrieb."
   },
   {
-    id: 10, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 50, points: 750,
+    id: 9, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 50, points: 750,
     title: "Was bedeutet der DOT-Code 2319 im Jahr 2026?",
     instruction: "Wähle die vollständig richtige Aussage aus.",
     options: [
@@ -569,7 +562,7 @@ window.QUIZ_DATA = [
     explanation: "Die ersten beiden Stellen stehen für die Kalenderwoche, die letzten beiden für das Produktionsjahr."
   },
   {
-    id: 11, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 50, points: 500,
+    id: 10, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 50, points: 500,
     title: "Welches Zeichen weist einen zulässigen Winterreifen aus?",
     instruction: "Wähle das entscheidende Symbol aus.",
     options: [
@@ -579,7 +572,7 @@ window.QUIZ_DATA = [
     explanation: "Das Alpine-Symbol kennzeichnet die geprüfte Wintereignung. M+S allein genügt bei neueren Reifen nicht."
   },
   {
-    id: 12, section: "Reifen & Räder", type: "multi-choice", typeLabel: "Mehrfachauswahl", difficulty: "Mittel", time: 60, points: 750,
+    id: 11, section: "Reifen & Räder", type: "multi-choice", typeLabel: "Mehrfachauswahl", difficulty: "Mittel", time: 60, points: 750,
     title: "Welche Arten von Reifendruckkontrollsystemen werden im Fahrzeug eingesetzt?",
     instruction: "Wähle genau zwei der vier Antwortmöglichkeiten aus.",
     options: [
@@ -592,7 +585,7 @@ window.QUIZ_DATA = [
     explanation: "Bei Fahrzeugen werden direkt und indirekt messende Reifendruckkontrollsysteme unterschieden."
   },
   {
-    id: 13, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 50, points: 500,
+    id: 12, section: "Reifen & Räder", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 50, points: 500,
     title: "Welches Reifendruckkontrollsystem wird beschrieben?",
     instruction: "Sensoren an den Rädern messen den Reifendruck unmittelbar und übertragen die Messwerte an das Steuergerät.",
     options: [
@@ -605,7 +598,7 @@ window.QUIZ_DATA = [
     explanation: "Ein direkt messendes Reifendruckkontrollsystem erfasst den Druck mit eigenen Sensoren an den Rädern."
   },
   {
-    id: 14, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 75, points: 750,
+    id: 13, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 75, points: 750,
     title: "Welche Werte werden für den statischen Abrollumfang benötigt?",
     instruction: "Wähle für den Reifen 195/65 R15 die Reifenhöhe H und den Felgendurchmesser dFelge in Millimetern aus. Das Quiz berechnet daraus automatisch den Abrollumfang. Jede richtige Auswahl zählt die Hälfte der Aufgabenpunkte.",
     calculation: {
@@ -628,7 +621,7 @@ window.QUIZ_DATA = [
     explanation: "H = 195 mm · 0,65 = 126,75 mm; dFelge = 15 · 25,4 = 381 mm. Damit D = 634,5 mm und U ≈ 1.993 mm."
   },
   {
-    id: 15, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 70, points: 750,
+    id: 14, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 70, points: 750,
     title: "Wie verändert sich der dynamische Abrollumfang?",
     instruction: "Ordne jedem Einfluss die im Material beschriebene Auswirkung zu.",
     items: [
@@ -643,7 +636,7 @@ window.QUIZ_DATA = [
     explanation: "Der dynamische Abrollumfang hängt von Betriebszustand, Belastung, Verschleiß und Geschwindigkeit ab."
   },
   {
-    id: 16, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 90, points: 1000,
+    id: 15, section: "Reifen & Räder", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 90, points: 1000,
     title: "Entschlüssle die Felgenbezeichnung 7,5 J × 18 H2 ET45, LK 112, ML 82,5.",
     instruction: "Ordne den Kennwerten ihre technische Bedeutung zu.",
     items: [
@@ -660,7 +653,7 @@ window.QUIZ_DATA = [
     explanation: "Die Felgenbezeichnung enthält Maße, Bauform, Einpresstiefe sowie Angaben zu Lochkreis und Mittelbohrung."
   },
   {
-    id: 17, section: "Fahrdynamik", type: "match", typeLabel: "Zuordnung", difficulty: "Leicht", time: 55, points: 500,
+    id: 16, section: "Fahrdynamik", type: "match", typeLabel: "Zuordnung", difficulty: "Leicht", time: 55, points: 500,
     title: "Welches Regelsystem passt zu welcher Fahrsituation?",
     instruction: "Ordne die drei Fahrsituationen zu.",
     items: [
@@ -672,7 +665,7 @@ window.QUIZ_DATA = [
     explanation: "ESP stabilisiert vor allem in Querrichtung, ABS beim Bremsen und ASR beim Beschleunigen."
   },
   {
-    id: 18, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 45, points: 500,
+    id: 17, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Leicht", time: 45, points: 500,
     title: "Was können Fahrwerkregelsysteme nicht verändern?",
     instruction: "Wähle genau eine Antwort aus.",
     options: [
@@ -683,7 +676,7 @@ window.QUIZ_DATA = [
     explanation: "Regelsysteme reduzieren oder verteilen Kräfte, können die physikalische Haftgrenze aber nicht anheben."
   },
   {
-    id: 19, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 50, points: 750,
+    id: 18, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 50, points: 750,
     title: "Was stellt der Kamm’sche Reibungskreis dar?",
     instruction: "Wähle die fachlich richtige Beschreibung.",
     options: [
@@ -695,14 +688,14 @@ window.QUIZ_DATA = [
     explanation: "Der Kreis zeigt die verfügbare Reifenhaftung für die Kombination aus Seitenführungs- und Längskräften."
   },
   {
-    id: 20, section: "Fahrdynamik", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Schwer", time: 75, points: 1000,
+    id: 19, section: "Fahrdynamik", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Schwer", time: 75, points: 1000,
     title: "Wo endet die resultierende Reifenkraft?",
     instruction: "Beim Bremsen in einer Rechtskurve wirken FB = 2.000 N und FS = 2.000 N. Wähle den Endpunkt von FRES.",
     diagram: "friction-circle", correct: ["result"],
     explanation: "Die Vektoraddition führt diagonal nach rechts unten. FRES beträgt etwa 2.828 N und liegt damit außerhalb des dargestellten Haftbereichs."
   },
   {
-    id: 21, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
+    id: 20, section: "Fahrdynamik", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
     title: "Liegt beim Bremsen in der Rechtskurve ein Haftungsverlust vor?",
     instruction: "FB und FS betragen jeweils 2.000 N; die Haftgrenze liegt bei 2.200 N.",
     options: [
@@ -714,14 +707,14 @@ window.QUIZ_DATA = [
     explanation: "Entscheidend ist die resultierende Kraft aus beiden Komponenten, nicht jede Einzelkraft für sich."
   },
   {
-    id: 22, section: "Fahrdynamik", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Schwer", time: 75, points: 1000,
+    id: 21, section: "Fahrdynamik", type: "diagram", typeLabel: "Diagrammauswahl", difficulty: "Schwer", time: 75, points: 1000,
     title: "Welches Rad bremst das ESP beim Übersteuern ab?",
     instruction: "Das Fahrzeug fährt eine Rechtskurve und übersteuert. Markiere das Rad, welches durch das ESP abgebremst werden muss.",
     diagram: "esp-wheel", correct: ["front-left"],
     explanation: "Beim Übersteuern wird das kurvenäußere Vorderrad abgebremst. In der Rechtskurve ist das das linke Vorderrad."
   },
   {
-    id: 23, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 55, points: 750,
+    id: 22, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 55, points: 750,
     title: "D-Wert, Stützlast, Zug- oder Druckbelastung?",
     instruction: "Ordne die vier Beschreibungen richtig zu.",
     items: [
@@ -738,7 +731,7 @@ window.QUIZ_DATA = [
     explanation: "D-Wert und Stützlast beschreiben unterschiedliche Wirkrichtungen; während der Fahrt treten außerdem Zug- und Druckbelastungen auf."
   },
   {
-    id: 24, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Schwer", time: 105, points: 1000,
+    id: 23, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Schwer", time: 105, points: 1000,
     title: "Berechne den erforderlichen D-Wert des Gespanns.",
     instruction: "T = 2.200 kg, R = 1.400 kg, g = 9,81 m/s². Verwende D = (T · R / (T + R)) · g und gib das Ergebnis in kN an.",
     options: [
@@ -748,7 +741,7 @@ window.QUIZ_DATA = [
     explanation: "D = (2.200 · 1.400 / 3.600) · 9,81 = 8.393 N ≈ 8,39 kN."
   },
   {
-    id: 25, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 70, points: 750,
+    id: 24, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Mittel", time: 70, points: 750,
     title: "Welche Klemmenbezeichnung gehört zu welcher lichttechnischen Einrichtung",
     instruction: "Ordne die sechs lichttechnischen Einrichtungen zu.",
     items: [
@@ -765,7 +758,7 @@ window.QUIZ_DATA = [
     explanation: "Die Klemmenbezeichnungen identifizieren die jeweiligen Lichtfunktionen unabhängig von möglichen Kabelfarben."
   },
   {
-    id: 26, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
+    id: 25, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
     title: "Was unterscheidet Steuerstromkreis und Arbeitsstromkreis?",
     instruction: "Wähle die fachlich richtige Aussage aus.",
     options: [
@@ -778,7 +771,7 @@ window.QUIZ_DATA = [
     explanation: "Der Steuerstromkreis schaltet die Relaisspule mit geringem Strom. Die Relaiskontakte schließen daraufhin den Arbeitsstromkreis, der den höheren Laststrom zum Verbraucher führt."
   },
   {
-    id: 27, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 75, points: 1000,
+    id: 26, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 75, points: 1000,
     title: "Welche Klemmenbezeichnung gehört zu welchem Buchstaben?",
     instruction: "Ordne den in der Abbildung markierten Buchstaben A bis D die richtigen Klemmenbezeichnungen zu.",
     illustration: {
@@ -798,7 +791,7 @@ window.QUIZ_DATA = [
     explanation: "Klemmen 85 und 86 gehören zur Relaisspule des Steuerstromkreises. Klemme 30 ist der Eingang des Arbeitsstromkreises; Klemme 87 führt nach dem Schalten zum Verbraucher."
   },
   {
-    id: 28, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 70, points: 1000,
+    id: 27, section: "Anhänger & Dokumente", type: "match", typeLabel: "Zuordnung", difficulty: "Schwer", time: 70, points: 1000,
     title: "Welches Genehmigungsdokument ist gemeint?",
     instruction: "Ordne die typischen Merkmale dem richtigen Dokument oder Verfahren zu.",
     items: [
@@ -814,7 +807,7 @@ window.QUIZ_DATA = [
     explanation: "Die Dokumente unterscheiden sich in Zweck, Aussteller, Mitführpflicht und notwendiger Abnahme."
   },
   {
-    id: 29, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
+    id: 28, section: "Anhänger & Dokumente", type: "choice", typeLabel: "Single-Choice", difficulty: "Mittel", time: 60, points: 750,
     title: "Was ist bei einem Umbau ohne ausreichende Genehmigungsdokumente erforderlich?",
     instruction: "Wähle den richtigen Ablauf aus.",
     options: [
@@ -828,8 +821,8 @@ window.QUIZ_DATA = [
 ];
 
 window.QUIZ_META = {
-  totalTime: 1860,
-  totalPoints: 22000,
+  totalTime: 1810,
+  totalPoints: 21500,
   sections: ["Reifen & Räder", "Fahrdynamik", "Anhänger & Dokumente"]
 };
 
